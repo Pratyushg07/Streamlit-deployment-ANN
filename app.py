@@ -53,7 +53,7 @@ input_df=scaler.transform(input_df)
 
 prediction=model.predict(input_df)[0][0]
 
-st.write(prediction)
+st.write(f"Churn Probabilty is {prediction}")
 if prediction>=0.5:
     st.write('The Customer is likely to churn')
 else:
